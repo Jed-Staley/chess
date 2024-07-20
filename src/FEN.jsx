@@ -1,3 +1,5 @@
+import pieces from 'pieces.json';
+
 function FEN({ gameState }) {
   let sections = FENstr.split(" ");
   let row = 0;
@@ -9,7 +11,7 @@ function FEN({ gameState }) {
       column += Number(char);
     }
     if (char.test(/[prnbqkPRNBQK]/)) {
-      gameState.board[row][column] = char;
+      gameState.board[row][column] = pieces[char];
     }
     if (char === '/') {
       row++;
@@ -44,13 +46,13 @@ function FEN({ gameState }) {
   }
 
   // section 4
-  gameState.halfMoves = sections[4];
+  gameState.halfMoves = Number(sections[4]);
 
   // section 5
-  gameState.fullMoves = sections[5];
+  gameState.fullMoves = Number(sections[5]);
 
   return (
-
+    
   );
 }
 

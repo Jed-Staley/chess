@@ -1,0 +1,14 @@
+{
+  "P": "white-pawn",
+  "R": "white-rook",
+  "N": "white-knight",
+  "B": "white-bishop",
+  "Q": "white-queen",
+  "K": "white-king",
+  "p": "black-pawn",
+  "r": "black-rook",
+  "n": "black-knight",
+  "b": "black-bishop",
+  "q": "black-queen",
+  "k": "black-king"
+}
